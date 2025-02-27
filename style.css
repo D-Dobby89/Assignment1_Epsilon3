@@ -91,21 +91,21 @@
     background: #f0f0f0;
   }
   
-  /* Slideshow container */
+  
   .slideshow-container {
-    max-width: 600px;   /* Adjust to your preference */
+    max-width: 600px;   
     position: relative;
-    margin: 50px auto;  /* Centers the container */
+    margin: 50px auto;  
     background: #333;
     overflow: hidden;
   }
   
-  /* Hide all slides by default */
+  
   .mySlides {
     display: none;
   }
   
-  /* Fade animation (optional) */
+  
   .fade {
     animation-name: fade;
     animation-duration: 1s;
