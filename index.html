@@ -2,59 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Epsilon 3 - Smart Snow Vacuum</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background-color: #87CEEB;
-      color: #000;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      text-align: center;
-      padding: 1rem;
-    }
-    nav {
-      background-color:  rgba(188, 20, 171, 0.528);
-      padding: 0.5rem 1rem;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h2{
-      padding-bottom: 1rem;
-    }
-    section {
-      padding: 1rem;
-    }
-    p{
-      padding-bottom: .5rem;
-    }
-    footer {
-      text-align: center;
-      background-color:  rgba(188, 20, 171, 0.528);
-      padding: 1rem;
-      margin-top: 1rem;
-    }
-    .image-container {
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -63,16 +13,30 @@
   </header>
 
   <nav>
-    <ul>
-      <li><a href=features.html>Features</a></li>
-      <li><a href=options.html>Options</a></li>
-      <li><a href=prices.html>Prices</a></li>
-      <li>
-        <a href="https://www.homedepot.com"
-           target="_blank">
-          See our competitors offerings
-        </a>
-      </li>
+    <ul class="Menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Search</a></li>
+      <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search items..." 
+    class="search-bar"
+  />
+
+  <!-- Where the filtered list of items will appear -->
+  
+  
+  <script src="search.js"></script>
+      <li class="dropdown">
+        <a href="#">Services </a>
+        <ul class="dropdown-content">
+          <li><a href=features.html>Features</a></li>
+          <li><a href=options.html>Options</a></li>
+          <li><a href=prices.html>Prices</a></li>
+           <li><a href="https://www.homedepot.com"
+           target="_blank">See our competitors offerings</a></li>
+        </ul>
+        </li>
     </ul>
   </nav>
 
@@ -93,7 +57,24 @@
     <p>The snow removal future is NOW!</p>
   </footer>
   <div class="image-container">
-    <img src="MrPlow.jpeg" alt="Centered Image" width="600">
+    
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="MrPlow.jpeg" alt="Pic 1" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="robot.png" alt="Pic 2" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="ScDot.png" alt="Pic 3" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="KidOnPlow.png" alt="Pic 3" style="width:100%">
+      </div>
+    </div>
+  
+    <script src="slideshow.js"></script>
 </div>
 </body>
 </html>
